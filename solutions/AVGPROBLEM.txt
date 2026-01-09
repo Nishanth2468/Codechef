@@ -1,6 +1,25 @@
-#include <stdio.h>
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-int main() {
-    // your code goes here
-
-}
+class Codechef
+{
+    public static void main (String[] args) throws java
+        .lang.Exception
+    {
+        Scanner in = new Scanner(System.in);
+        
+        int t = in.nextInt();
+        while(t--> 0){
+            
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int c = in.nextInt();
+            
+            if((a+b) > (2*c)){
+                System.out.print("YES\n");
+            }
+            else{
+                System.out.print("NO\n");
+            }
+        }
