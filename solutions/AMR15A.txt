@@ -1,1 +1,6 @@
-# cook your dish here
+#include <stdio.h>
+
+int main() {
+    // your code goes here
+
+}
