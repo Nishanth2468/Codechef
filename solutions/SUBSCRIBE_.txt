@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main (String[] args) throws java
+        .lang.Exception
+    {
+        // your code goes here
+        Scanner in = new Scanner(System.in);
+        
+        int T = in.nextInt();
+        
+        /* 6 ppl can share a chef-TV subscription.
+        N number of friends what to buy this subscription
+        
+        so one subscription =< 6 ppl can share it 
+        
+        1%6 = 1 2/6 = 2 12%6 = 0 but 6/6 = 1 7/6 = 1 
+        
+        if n <= 6 then only one subscription
+        
+        but if n is like n/6(7/6) = 1 but we need two 
+            subscription 1+1
