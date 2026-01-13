@@ -1,0 +1,17 @@
+# cook your dish here
+T = int(input())
+
+for _ in range(T):
+    N, A, B = map(int, input().split())
+    
+    # Calculate number of rounds
+    rounds = 0
+    temp = N
+    while temp > 1:
+        temp //= 2
+        rounds += 1
+
+    # Total time calculation
+    total_time = (rounds * A) + ((rounds - 1) * B)
+    
+    print(total_time)
